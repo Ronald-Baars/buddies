@@ -3,7 +3,7 @@ import NextButton from 'components/common/NextButton';
 
 import './style.css';
 
-const Login = ({ onSubmit, placeholder, fullWidth = false }) => {
+const Login = ({ onSubmit, placeholder, fullWidth = false, className = '' }) => {
   const inputEl = useRef();
   const [inputValue, setInputValue] = useState(false);
 
@@ -17,11 +17,15 @@ const Login = ({ onSubmit, placeholder, fullWidth = false }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (inputValue) onSubmit(inputValue);
+
+    // Empty the input
+    inputEl.current.value = "";
+    setInputValue("");
   };
 
   return (
     <form
-      className={`Input ${fullWidth ? 'Input-fullWidth' : ''}`}
+      className={`Input ${fullWidth ? 'Input-fullWidth' : ''} ${className}`}
       onSubmit={handleSubmit}
     >
       <input

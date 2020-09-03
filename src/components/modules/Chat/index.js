@@ -1,11 +1,36 @@
 import React from 'react';
 
+import EmptyState from 'components/common/EmptyState';
+import Input from 'components/common/Input';
+import Messages from 'components/modules/Messages';
+import socket from 'services/socket';
+
 import './style.css';
 
-const Component = () => (
-  <div className="Component">
-    New component
-  </div>
-);
+const Chat = ({ selectedUser, messageData }) => {
 
-export default Component;
+  // Send the new message to the back-end
+  const handleSubmit = (newMessage) => {
+    socket.sendMessage(newMessage, selectedUser.id);
+  };
+
+  return (
+  <div className="Chat">
+    {selectedUser
+      ? (
+        <>
+          <Messages messageData={messageData} />
+          <Input
+            onSubmit={handleSubmit}
+            fullWidth
+            className="Chat__Input"
+            placeholder="Write your message..."
+          />
+        </>
+      ) : (
+        <EmptyState text="Select a buddy to start a chat" />
+        )}
+  </div>
+)};
+
+export default Chat;

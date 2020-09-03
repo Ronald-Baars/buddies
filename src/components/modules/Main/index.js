@@ -9,8 +9,8 @@ import './style.css';
 const Main = ({ username }) => {
 
   const [ selectedUser, setSelectedUser ] = useState();
-  const [ messages, setMessages ] = useState();
-  const [ users, setUsers ] = useState();
+  const [ messages, setMessages ] = useState([]);
+  const [ users, setUsers ] = useState([]);
 
   // Add new messages to the state
   const receiveMessage = (message) => {
