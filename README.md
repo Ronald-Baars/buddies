@@ -1,12 +1,27 @@
-## Available Scripts
+## Getting started
+1. **`git clone git@github.com:Ronald-Baars/buddies.git`**
+2. **`cd buddies`**
+3. **`npm install`**
+4. **`npm start`** <br>
+   This command uses concurrently to start both the front and back-end.
+5. **Open [http://localhost:3000](http://localhost:3000)**<br>
+   To be able to chat, open multiple tabs.
 
-In the project directory, you can run the following commands:
+## Components:
+Common:
+- **Badge** (Reused from a different project.)
+- **EmptyState**
+- **Header**
+- **Input**
+- **NextButton**
 
-- **`npm install`**<br>
-  Installs the dependent Node modules and gets your app ready for it's first run.
+Modules:
+- **Chat**
+- **Login**
+- **Main**
+- **Messages**
+  - **Message**
+- **Userlist**
+  - **User**
 
-- **`npm start`**<br>
-  Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
-
-- **`npm run build`**<br>
-  Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app is ready to be deployed!
+The Sketch file is also included in the repo. I created this, and pre-wrote the css before I started counting the two hours.
