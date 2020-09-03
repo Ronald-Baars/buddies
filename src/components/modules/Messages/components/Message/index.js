@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Badge from 'components/common/Badge';
+
 import './style.css';
 
 const Message = ({ message, selectedUser }) => {

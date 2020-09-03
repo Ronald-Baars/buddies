@@ -1,6 +1,7 @@
 import React from 'react';
 
 import EmptyState from 'components/common/EmptyState';
+
 import User from './components/User';
 import './style.css';
 
