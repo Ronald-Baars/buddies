@@ -21,7 +21,7 @@ const Messages = ({ messageData, selectedUser }) => {
           />
         )) : (
           <EmptyState
-            text={`Write your first message to ${selectedUser.name}`}
+            text={`Write your first message to ${selectedUser.username}`}
           />
        )
       }
