@@ -17,6 +17,10 @@
 
 .Message__Badge {
   margin-right: 16px;
+
+  /* This is dirty but time is up :) */
+  transform: scale(0.8);
+  transform-origin: bottom right;
 }
 
 .Message__content {
