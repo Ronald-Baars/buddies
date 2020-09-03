@@ -1,3 +1,17 @@
-.Component {
-  /* New style sheet */
+.Badge {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  line-height: 46px;
+  font-size: 22px;
+}
+
+.Badge__background {
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
 }

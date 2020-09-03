@@ -8,7 +8,7 @@ import './style.css';
 
 const Main = ({ username }) => {
 
-  const [ selectedChat, setSelectedChat ] = useState();
+  const [ selectedUser, setSelectedUser ] = useState();
   const [ messages, setMessages ] = useState();
   const [ users, setUsers ] = useState();
 
@@ -27,11 +27,11 @@ const Main = ({ username }) => {
     <div className="Main">
       <UserList
         users={users}
-        selectedChat={selectedChat}
-        setSelectedChat={setSelectedChat}
+        selectedUser={selectedUser}
+        setSelectedUser={setSelectedUser}
       />
       <Chat
-        selectedChat={selectedChat}
+        selectedUser={selectedUser}
         messages={messages}
       />
     </div>

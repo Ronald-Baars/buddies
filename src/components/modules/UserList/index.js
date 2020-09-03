@@ -9,6 +9,8 @@ const UserList = ({ users, selectedUser, setSelectedUser }) => (
       <User
         key={userData.id}
         userData={userData}
+        selectedUser={selectedUser}
+        setSelectedUser={setSelectedUser}
       />
     ))}
   </div>
