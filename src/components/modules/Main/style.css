@@ -1,3 +1,4 @@
 .Main {
-  /* New style sheet */
+  display: flex;
+  flex-direction: row;
 }

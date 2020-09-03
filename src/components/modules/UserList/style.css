@@ -1,3 +1,8 @@
-.Component {
-  /* New style sheet */
+.UserList {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 23px 40px;
+  height: calc(100vh - 64px);
+  border-right: 1px solid var(--color-light-gray);
 }
