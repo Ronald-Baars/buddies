@@ -1,3 +1,23 @@
-.Component {
-  /* New style sheet */
+.NextButton {
+  background: var(--color-blue);
+  height: 46px;
+  line-height: 0;
+  width: 57px;
+  border-radius: 100px;
+  padding: 0;
+  margin: 8px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.15s;
+  min-width: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  max-height: 48px;
+}
+
+.NextButton:disabled {
+  background: var(--color-light-gray);
 }

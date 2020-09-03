@@ -2,10 +2,10 @@ import React from 'react';
 
 import './style.css';
 
-const Component = () => (
-  <div className="Component">
-    New component
+const Main = () => (
+  <div className="Main">
+    New Main
   </div>
 );
 
-export default Component;
+export default Main;
