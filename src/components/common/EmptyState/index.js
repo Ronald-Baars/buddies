@@ -2,10 +2,10 @@ import React from 'react';
 
 import './style.css';
 
-const Component = () => (
-  <div className="Component">
-    New component
+const EmptyState = ({ text }) => (
+  <div className="EmptyState">
+    {text}
   </div>
 );
 
-export default Component;
+export default EmptyState;
