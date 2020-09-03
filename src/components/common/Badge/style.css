@@ -1,9 +1,12 @@
 .Badge {
   width: 46px;
   height: 46px;
+  min-width: 46px;
+  min-height: 46px;
   position: relative;
   line-height: 46px;
   font-size: 22px;
+  text-align: center;
 }
 
 .Badge__background {

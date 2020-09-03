@@ -19,7 +19,10 @@ const Chat = ({ selectedUser, messageData }) => {
     {selectedUser
       ? (
         <>
-          <Messages messageData={messageData} />
+          <Messages
+            messageData={messageData}
+            selectedUser={selectedUser}
+          />
           <Input
             onSubmit={handleSubmit}
             fullWidth
@@ -29,7 +32,7 @@ const Chat = ({ selectedUser, messageData }) => {
         </>
       ) : (
         <EmptyState text="Select a buddy to start a chat" />
-        )}
+      )}
   </div>
 )};
 

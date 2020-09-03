@@ -31,8 +31,8 @@ const Main = ({ username }) => {
         setSelectedUser={setSelectedUser}
       />
       <Chat
+        messageData={messages}
         selectedUser={selectedUser}
-        messages={messages}
       />
     </div>
   );

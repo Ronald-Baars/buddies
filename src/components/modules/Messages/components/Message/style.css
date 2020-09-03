@@ -1,3 +1,35 @@
-.Component {
-  /* New style sheet */
+.Message {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 64px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.Message-sent {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.Message-received {
+  justify-content: flex-start;
+}
+
+.Message__Badge {
+  margin-right: 16px;
+}
+
+.Message__content {
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-weight: 500;
+}
+
+.Message-sent .Message__content {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.Message-received .Message__content {
+  background: var(--color-light-gray);
 }
