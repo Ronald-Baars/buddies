@@ -4,6 +4,8 @@ import EmptyState from 'components/common/EmptyState';
 import Input from 'components/common/Input';
 import Messages from 'components/modules/Messages';
 import socket from 'services/socket';
+import draftMessages from 'services/draftMessages';
+
 
 import './style.css';
 
@@ -13,6 +15,11 @@ const Chat = ({ selectedUser, messageData }) => {
   const handleSubmit = (newMessage) => {
     socket.sendMessage(newMessage, selectedUser.id);
   };
+
+  const handleChange = (currentMessage) => {
+    console.log('handleChange');
+    draftMessages.add(currentMessage, selectedUser.id)
+  }
 
   return (
   <div className="Chat">
@@ -25,6 +32,8 @@ const Chat = ({ selectedUser, messageData }) => {
           />
           <Input
             onSubmit={handleSubmit}
+            onChange={handleChange}
+            userId={selectedUser.id}  
             fullWidth
             className="Chat__Input"
             placeholder="Write your message..."
